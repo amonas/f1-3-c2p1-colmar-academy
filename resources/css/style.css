@@ -12,6 +12,27 @@ a{
   color: inherit;
   text-decoration: none;
 }
+
+h1 {
+  font-size: 3.35rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.35rem;
+}
+
+.encode {
+  font-family: font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
 /*Header*/
 
 header {
@@ -73,12 +94,7 @@ header li{
   margin-left:1.5rem;
 }
 
-.heading h1 {
-  font-size: 3.35rem;
-}
-
 .heading h2 {
-  font-size: 1.75rem;
   padding-bottom:1rem;
 }
 
@@ -89,19 +105,19 @@ div.heading h3{
   text-align: center;
   background-color: rgb(74, 74, 74);
   color: white;
-  font-size: 1.5rem;
 }
 
 /* Information */
 
 .information{
   display: flex;
-  margin: 2rem 0;
+
 }
 
 .left {
   width: 60%;
-  margin: 0 1.5rem;
+  margin: 2rem 1.5rem;
+
 }
 
 .left img {
@@ -109,9 +125,19 @@ div.heading h3{
   margin-bottom: 2rem;
 }
 
+.left h1 {
+  font-size: 2.5rem;
+}
+
+.left .encode {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
 .right {
   width:40%;
-  margin-top:-1rem;
+  padding-top: 1rem;
+  border-left: 1px solid rgb(224, 226, 226);
 }
 
 .right a{
@@ -126,13 +152,70 @@ div.heading h3{
 .box {
   display: flex;
   align-items: center;
+  border: 1px solid rgb(224, 226, 226);
+  padding-right: 1rem;
+}
+
+.box:first-child{
+  border-top: unset;
 }
 
 .box p, h2 {
   margin: 0.5rem 0;
 }
 
+.text p {
+  font-size: 1.2rem;
+}
 
 .guest-lecture {
     background-color: rgb(216, 216, 216);
+}
+
+/* Courses */
+
+.courses {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4.5rem;
+}
+
+.courses h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.col {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.course-box {
+  margin-right: 2rem;
+  background-color: white;
+  width: 31%;
+}
+
+.col .course-box:last-child {
+  margin-right: unset;
+}
+
+.course-box img {
+  max-width: 100%;
+}
+
+.textbox {
+  padding: .5rem 1rem 1rem 1rem;;
+
+}
+
+.textbox h2{
+  font-size: 2rem;
+}
+
+.textbox p{
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1.35rem;
 }
