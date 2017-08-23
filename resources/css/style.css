@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   margin: 0;
     color: rgb(74, 74, 74);
 }
@@ -11,6 +11,7 @@ body {
 a{
   color: inherit;
   text-decoration: none;
+
 }
 
 h1 {
@@ -25,7 +26,7 @@ h3 {
     font-size: 1.4rem;
 }
 
-p {
+p, quote {
   font-size: 1.35rem;
 }
 
@@ -37,8 +38,16 @@ img, video {
   display: none;
 }
 
+.mobile-flex{
+  display: none;
+}
+
+.desktop {
+  display:contents;
+}
+
 .encode {
-  font-family: font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-family: 'Encode Sans Semi Condensed', "Verdana", sans-serif;
 }
 
 /*Header*/
@@ -56,8 +65,6 @@ header {
 
 header div {
   padding-left: 1.5rem;
-  display: flex;
-  align-items: center;
 }
 
 header nav {
@@ -80,6 +87,11 @@ header li{
   list-style-type: none;
   display: inline-block;
   padding-left: 1rem;
+}
+
+header a {
+  display: flex;
+  align-items: center;
 }
 
 /* Jumbotoron */
@@ -248,7 +260,7 @@ header li{
 .inner-thesis .right {
   padding-top: unset;
   border-left: unset;
-  margin-top: -1rem;
+
 }
 
 .inner-thesis .box {
@@ -292,7 +304,11 @@ footer p {
 }
 
 .mobile {
-  display:flex;
+  display: initial;
+}
+
+.mobile-flex{
+  display: flex;
 }
 
 h1 {
@@ -430,9 +446,9 @@ label h2 {
 .tab-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height .35s;
-  -o-transition: max-height .35s;
-  transition: max-height .35s;
+  -webkit-transition: max-height 1.5s ease-in-out;
+  -o-transition: max-height 1.5s ease-in-out;
+  transition: max-height 1.5s ease-in-out;
 }
 
 .tab-content p {
@@ -440,7 +456,7 @@ label h2 {
 }
 /* :checked */
 input:checked ~ .tab-content {
-  max-height: 100em;
+  max-height: 487px;;
 }
 
 /*Thesis section */
