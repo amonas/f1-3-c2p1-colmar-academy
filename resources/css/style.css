@@ -26,7 +26,7 @@ h3 {
     font-size: 1.4rem;
 }
 
-p, quote {
+p, blockquote {
   font-size: 1.35rem;
 }
 
@@ -155,6 +155,10 @@ header a {
   margin-top: 3rem;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .right {
   width:40%;
   padding-top: 1rem;
@@ -178,7 +182,7 @@ header a {
 }
 
 .box:first-child{
-  border-top: unset;
+  border-top: initial;
 }
 
 .box p, h2 {
@@ -219,7 +223,7 @@ header a {
 }
 
 .col .course-box:last-child {
-  margin-right: unset;
+  margin-right: initial;
 }
 
 .course-box img {
@@ -253,19 +257,19 @@ header a {
 }
 
 .inner-thesis .left {
-  margin-top: unset;
+  margin-top: initial;
 
 }
 
 .inner-thesis .right {
-  padding-top: unset;
-  border-left: unset;
+  padding-top: initial;
+  border-left: initial;
 
 }
 
 .inner-thesis .box {
-  padding-right: unset;
-  border: unset;
+  padding-right: initial;
+  border: initial;
   margin-right: 0.5rem;
 
 }
@@ -322,9 +326,6 @@ header {
   align-items: center;
 }
 
-header img {
-  width: unset;
-}
 
 /* Jumbotron section*/
 
@@ -339,16 +340,18 @@ header img {
 }
 
 .heading {
-  width: unset;
+  width: initial;
   margin: 0 1rem;
 }
 
 .heading h1 {
+  width: 78%;
   margin: 2rem 0;
 }
 
 .heading h2 {
-  padding-bottom: unset;
+  width: 86%;
+  padding-bottom: initial;
 }
 
 .heading h3 {
@@ -360,15 +363,15 @@ header img {
 /*Information section */
 
 .right {
-  width: unset;
-  padding-top: unset;
+  width: initial;
+  padding-top: initial;
 }
 
 .box {
   flex-direction: column;
-  padding-right: unset;
-  align-items: unset;
-  border: unset;
+  padding-right: initial;
+  align-items: initial;
+  border: initial;
   padding-bottom: 4rem;
 }
 
@@ -384,14 +387,14 @@ header img {
 }
 
 .guest-lecture{
-background-color: unset;
+background-color: initial;
 padding-bottom: 2rem;
 }
 
 /*Courses section */
 
 .courses {
-  padding: unset;
+  padding: initial;
   padding-bottom: 1.5rem;
   background-color: rgb(245, 244, 245);
 }
@@ -403,11 +406,11 @@ padding-bottom: 2rem;
 }
 
 .col {
-  padding: unset;
+  padding: initial;
   flex-direction: column;
 }
 .course-box{
-  width: unset;
+  width: initial;
   margin: 0 1rem 0.5rem 1rem;
 }
 
@@ -429,17 +432,12 @@ input {
   z-index: -1;
 }
 label {
-  position: relative;
   display: block;
   font-weight: bold;
   cursor: pointer;
   background-color: rgb(216,216,216);
   margin: 0 1rem;
   padding: 1rem 0 1.5rem 1rem;
-}
-
-label h2 {
-  margin: 0;
   font-size: 1.5rem
 }
 
@@ -451,12 +449,13 @@ label h2 {
   transition: max-height 1.5s ease-in-out;
 }
 
-.tab-content p {
-  margin: 1em;
-}
 /* :checked */
 input:checked ~ .tab-content {
   max-height: 487px;;
+}
+
+.tab-content p {
+  margin: 1em;
 }
 
 /*Thesis section */
@@ -479,7 +478,7 @@ input:checked ~ .tab-content {
 
 footer {
   padding: 0;
-  border: unset;
+  border: initial;
 }
 
 footer p {
