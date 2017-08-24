@@ -15,18 +15,22 @@ a{
 }
 
 h1 {
+  font-size: 53.6px;
   font-size: 3.35rem;
 }
 
 h2 {
+    font-size: 28px;
     font-size: 1.75rem;
 }
 
 h3 {
+    font-size: 22.4px;
     font-size: 1.4rem;
 }
 
 p, blockquote {
+  font-size: 21.6px;
   font-size: 1.35rem;
 }
 
@@ -53,10 +57,15 @@ img, video {
 /*Header*/
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 0;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
+  height: 64px;
   height: 4rem;
   width: 100%;
   z-index: 5;
@@ -64,13 +73,19 @@ header {
 }
 
 header div {
+  padding-left: 24px;
   padding-left: 1.5rem;
 }
 
 header nav {
+  padding-right: 24px;
   padding-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header h3{
@@ -86,20 +101,31 @@ header span{
 header li{
   list-style-type: none;
   display: inline-block;
+  padding-left: 16px;
   padding-left: 1rem;
 }
 
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Jumbotoron */
 
 .jumbotron {
+  margin-top: 64px;
   margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 24px;
   padding:2rem 1.5rem;
   background-color: rgb(216, 216, 216);
 }
@@ -111,15 +137,18 @@ header a {
 .heading {
   display: inline-block;
   width: 32%;
+  margin-left: 24px;
   margin-left:1.5rem;
 }
 
 .heading h2 {
+  padding-bottom: 16px;
   padding-bottom:1rem;
 }
 
 .heading h3{
   width: 100%;
+  padding: 8px 0;
   padding: 0.5rem 0;
   background-color:gray;
   text-align: center;
@@ -131,27 +160,34 @@ header a {
 /* Information */
 
 .information{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 }
 
 .left {
   width: 60%;
+  margin: 32px 24px;
   margin: 2rem 1.5rem;
 
 }
 
 .left img {
   max-width: 100%;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 .left h1 {
+  font-size: 40px;
   font-size: 2.5rem;
 }
 
 .left .encode {
+  font-size: 19.2px;
   font-size: 1.2rem;
+  margin-top: 48px;
   margin-top: 3rem;
 }
 
@@ -161,6 +197,7 @@ blockquote {
 
 .right {
   width:40%;
+  padding-top: 16px;
   padding-top: 1rem;
   border-left: 1px solid rgb(224, 226, 226);
 }
@@ -171,13 +208,19 @@ blockquote {
 
 .right img {
   width: 35%;
+  padding: 16px;
   padding: 1rem;
 }
 
 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid rgb(224, 226, 226);
+  padding-right: 16px;
   padding-right: 1rem;
 }
 
@@ -186,10 +229,12 @@ blockquote {
 }
 
 .box p, h2 {
+  margin: 8px 0;
   margin: 0.5rem 0;
 }
 
 .text p {
+  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
@@ -201,22 +246,33 @@ blockquote {
 
 .courses {
     background-color: rgb(216, 216, 216);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px 72px;
     padding: 1rem 4.5rem;
 }
 
 .courses h1 {
   text-align: center;
+  margin: 16px 0;
   margin: 1rem 0;
 }
 
 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding: 16px 0;
   padding: 1rem 0;
 }
 
 .course-box {
+  margin-right: 32px;
   margin-right: 2rem;
   background-color: white;
   width: 31%;
@@ -231,28 +287,35 @@ blockquote {
 }
 
 .textbox {
+  padding: 8px 16px 16px 16px;
   padding: .5rem 1rem 1rem 1rem;;
 
 }
 
 .textbox h2{
+  font-size: 32px;
   font-size: 2rem;
 }
 
 .textbox p{
+  padding: 8px 0;
   padding: 0.5rem 0;
   margin: 0;
+  font-size: 21.6px;
   font-size: 1.35rem;
 }
 
 .thesis h1{
   text-align: center;
+  margin: 32px 0;
   margin: 2rem 0;
 }
 
 /*Thesis section */
 
 .inner-thesis {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -270,11 +333,13 @@ blockquote {
 .inner-thesis .box {
   padding-right: initial;
   border: initial;
+  margin-right: 8px;
   margin-right: 0.5rem;
 
 }
 
 .thesis video {
+  padding-bottom: 16px;
   padding-bottom: 1rem;
 }
 
@@ -283,10 +348,17 @@ blockquote {
 }
 
 footer {
+  padding: 16px 24px 48px 24px;
   padding: 1rem 1.5rem 3rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid rgb(224, 226, 226);
 
 }
@@ -294,10 +366,12 @@ footer {
 footer li{
   list-style-type: none;
   display: inline-block;
+  padding-left: 16px;
   padding-left: 1rem;
 }
 
 footer p {
+  font-size: 16px;
   font-size: 1rem;
 }
 
@@ -312,6 +386,8 @@ footer p {
 }
 
 .mobile-flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -321,9 +397,14 @@ h1 {
 
 header {
 
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+
+      justify-content: space-around;
   height: 3rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 
 
@@ -332,7 +413,10 @@ header {
 .jumbotron {
   margin-top: 2rem;
   padding: 0;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .jumbotron img {
@@ -368,9 +452,15 @@ header {
 }
 
 .box {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-right: initial;
-  align-items: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+              -ms-grid-row-align: initial;
+          align-items: initial;
   border: initial;
   padding-bottom: 4rem;
 }
@@ -383,6 +473,8 @@ header {
 .right img {
   width: 100%;
   box-sizing: border-box;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -407,7 +499,10 @@ padding-bottom: 2rem;
 
 .col {
   padding: initial;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .course-box{
   width: initial;
@@ -429,6 +524,7 @@ padding-bottom: 2rem;
 input {
   position: absolute;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   z-index: -1;
 }
 label {
@@ -445,7 +541,6 @@ label {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 1.5s ease-in-out;
-  -o-transition: max-height 1.5s ease-in-out;
   transition: max-height 1.5s ease-in-out;
 }
 
