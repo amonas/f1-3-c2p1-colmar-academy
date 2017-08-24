@@ -1,0 +1,489 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  margin: 0;
+    color: rgb(74, 74, 74);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+
+}
+
+h1 {
+  font-size: 3.35rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p, blockquote {
+  font-size: 1.35rem;
+}
+
+img, video {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-flex{
+  display: none;
+}
+
+.desktop {
+  display:contents;
+}
+
+.encode {
+  font-family: 'Encode Sans Semi Condensed', "Verdana", sans-serif;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+header div {
+  padding-left: 1.5rem;
+}
+
+header nav {
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+header h3{
+  display: inline-block;
+
+}
+
+header span{
+  font-weight: 200;
+
+}
+
+header li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+/* Jumbotoron */
+
+.jumbotron {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  padding:2rem 1.5rem;
+  background-color: rgb(216, 216, 216);
+}
+
+.jumbotron img {
+  width: 60%;
+}
+
+.heading {
+  display: inline-block;
+  width: 32%;
+  margin-left:1.5rem;
+}
+
+.heading h2 {
+  padding-bottom:1rem;
+}
+
+.heading h3{
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color:gray;
+  text-align: center;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  font-weight: 300;
+}
+
+/* Information */
+
+.information{
+  display: flex;
+
+}
+
+.left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+
+}
+
+.left img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.left h1 {
+  font-size: 2.5rem;
+}
+
+.left .encode {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.right {
+  width:40%;
+  padding-top: 1rem;
+  border-left: 1px solid rgb(224, 226, 226);
+}
+
+.right a{
+  color: blue;
+}
+
+.right img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(224, 226, 226);
+  padding-right: 1rem;
+}
+
+.box:first-child{
+  border-top: initial;
+}
+
+.box p, h2 {
+  margin: 0.5rem 0;
+}
+
+.text p {
+  font-size: 1.2rem;
+}
+
+.guest-lecture {
+    background-color: rgb(216, 216, 216);
+}
+
+/* Courses */
+
+.courses {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4.5rem;
+}
+
+.courses h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.col {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.course-box {
+  margin-right: 2rem;
+  background-color: white;
+  width: 31%;
+}
+
+.col .course-box:last-child {
+  margin-right: initial;
+}
+
+.course-box img {
+  max-width: 100%;
+}
+
+.textbox {
+  padding: .5rem 1rem 1rem 1rem;;
+
+}
+
+.textbox h2{
+  font-size: 2rem;
+}
+
+.textbox p{
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.thesis h1{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/*Thesis section */
+
+.inner-thesis {
+  display: flex;
+}
+
+.inner-thesis .left {
+  margin-top: initial;
+
+}
+
+.inner-thesis .right {
+  padding-top: initial;
+  border-left: initial;
+
+}
+
+.inner-thesis .box {
+  padding-right: initial;
+  border: initial;
+  margin-right: 0.5rem;
+
+}
+
+.thesis video {
+  padding-bottom: 1rem;
+}
+
+.fisma{
+    background-color: rgb(216, 216, 216);
+}
+
+footer {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(224, 226, 226);
+
+}
+
+footer li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width:640px){
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: initial;
+}
+
+.mobile-flex{
+  display: flex;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+
+  justify-content: space-around;
+  height: 3rem;
+  align-items: center;
+}
+
+
+/* Jumbotron section*/
+
+.jumbotron {
+  margin-top: 2rem;
+  padding: 0;
+  flex-direction: column;
+}
+
+.jumbotron img {
+  width: 99%;
+}
+
+.heading {
+  width: initial;
+  margin: 0 1rem;
+}
+
+.heading h1 {
+  width: 78%;
+  margin: 2rem 0;
+}
+
+.heading h2 {
+  width: 86%;
+  padding-bottom: initial;
+}
+
+.heading h3 {
+  background-color: rgb(155, 155, 155);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/*Information section */
+
+.right {
+  width: initial;
+  padding-top: initial;
+}
+
+.box {
+  flex-direction: column;
+  padding-right: initial;
+  align-items: initial;
+  border: initial;
+  padding-bottom: 4rem;
+}
+
+.box .text {
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.right img {
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.guest-lecture{
+background-color: initial;
+padding-bottom: 2rem;
+}
+
+/*Courses section */
+
+.courses {
+  padding: initial;
+  padding-bottom: 1.5rem;
+  background-color: rgb(245, 244, 245);
+}
+
+.courses h1 {
+  margin-top:2rem;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+}
+
+.col {
+  padding: initial;
+  flex-direction: column;
+}
+.course-box{
+  width: initial;
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+.col .course-box:last-child{
+  margin-right: 1rem;
+}
+
+
+/*checkbox */
+.tab {
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(216,216,216);
+  margin: 0 1rem;
+  padding: 1rem 0 1.5rem 1rem;
+  font-size: 1.5rem
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1.5s ease-in-out;
+  -o-transition: max-height 1.5s ease-in-out;
+  transition: max-height 1.5s ease-in-out;
+}
+
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 487px;;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+/*Thesis section */
+
+.thesis h1 {
+  font-size: 2.25rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.inner-thesis .left{
+  margin: 0;
+  width: 100%;
+}
+
+.thesis video {
+  padding-bottom: 1.5rem;
+}
+
+/*Footer */
+
+footer {
+  padding: 0;
+  border: initial;
+}
+
+footer p {
+  font-size: 0.85rem;
+  padding-left: 1rem;
+}
+
+}
